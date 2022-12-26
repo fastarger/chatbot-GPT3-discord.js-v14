@@ -17,4 +17,4 @@ Coloque seu token OPENAI - https://beta.openai.com/overview
 
 Veja o bot com a API OPENAI funcionando:
 
-![alt text](https://media.discordapp.net/attachments/876308694130909234/1056772202948743179/chat-openai.gif)
+![alt text](https://media.discordapp.net/attachments/876308694130909234/1056773915965399141/chat-openai-overview.gif)
