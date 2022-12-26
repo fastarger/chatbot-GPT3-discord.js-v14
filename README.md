@@ -1,4 +1,7 @@
 # chatbot-GPT3-discord.js-v14
+
+![alt text](https://media.discordapp.net/attachments/876308694130909234/1056770839934156900/CHAT_GPT3_-_DISCORD_BOT.png?width=1025&height=359)
+
 🤖Um Simples bot em node.js utilizando a API OPENAI.
 
 🔗 Instalação:
