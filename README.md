@@ -9,7 +9,7 @@ npm install discord.js openai moment
 
 Inicie com: node index.js
 
-Coloque seu token em config.token - https://discord.com/developers/applications
+Coloque seu token em config.json - https://discord.com/developers/applications
 
 Coloque seu token OPENAI - https://beta.openai.com/overview
 
