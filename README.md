@@ -2,19 +2,19 @@
 
 ![alt text](https://media.discordapp.net/attachments/876308694130909234/1056770839934156900/CHAT_GPT3_-_DISCORD_BOT.png?width=1025&height=359)
 
-🤖Um Simples bot em node.js utilizando a API OPENAI.
+🤖A Simple bot in node.js using an OPENAI API.
 
-🔗 Instalação:
+🔗 Installation:
 npm install discord.js openai moment
 
-Inicie com: node index.js
+Start with: node index.js
 
-Coloque seu token em config.json - https://discord.com/developers/applications
+Put your token in config.json - https://discord.com/developers/applications
 
-Coloque seu token OPENAI - https://beta.openai.com/overview
+Place your OPENAI token - https://beta.openai.com/overview
 
-##  🔗 **Faça um teste utilizando o meu bot:** https://discord.com/oauth2/authorize?client_id=1056762541084254278&scope=bot&permissions=294272822336
+##  🔗 **Give it a try using my bot:** https://discord.com/oauth2/authorize?client_id=1056762541084254278&scope=bot&permissions=294272822336
 
-**Veja o bot com a API OPENAI funcionando:**
+**See the bot with the OPENAI API working:**
 
-![alt text](https://media.discordapp.net/attachments/876308694130909234/1056773915965399141/chat-openai-overview.gif)
+![alt text](https://media.discordapp.net/attachments/876308691341697076/1057841862204997712/chat-openai-overview4.gif)
