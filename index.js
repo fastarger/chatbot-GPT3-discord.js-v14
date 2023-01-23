@@ -1,14 +1,15 @@
+require('dotenv').config();
 const { Client, Collection, GatewayIntentBits, Partials } = require("discord.js");
 const client = new Client({intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildEmojisAndStickers, GatewayIntentBits.GuildIntegrations, GatewayIntentBits.GuildWebhooks, GatewayIntentBits.GuildInvites, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.GuildPresences, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMessageReactions, GatewayIntentBits.GuildMessageTyping, GatewayIntentBits.DirectMessages, GatewayIntentBits.DirectMessageReactions, GatewayIntentBits.DirectMessageTyping, GatewayIntentBits.MessageContent], shards: "auto", partials: [Partials.Message, Partials.Channel, Partials.GuildMember, Partials.Reaction, Partials.GuildScheduledEvent, Partials.User, Partials.ThreadMember]});
-const config = require("./config.json");
 const { readdirSync } = require("fs")
 const moment = require("moment");
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v10');
-
-let token = config.token
+const { Configuration, OpenAIApi } = require("openai");
 
 client.commands = new Collection()
+
+let token = process.env.TOKEN
 
 const rest = new REST({ version: '10' }).setToken(token);
 
@@ -44,6 +45,37 @@ readdirSync('./src/events').forEach(async file => {
 	}
 })
 
+const configuration = new Configuration({
+  organization: process.env.OPEN_AI_ORG,
+  apiKey: process.env.OPEN_AI_KEY,
+});
+
+const openai = new OpenAIApi(configuration);
+
+//check for messeges
+client.on('messageCreate' , async function(message){
+  if (message.channel.name == "chatbot")  {
+  try{
+      if(message.author.bot) return; //donot let bot call itself
+      message.channel.sendTyping();
+      const response = await openai.createCompletion({
+          model:"text-davinci-003",
+          prompt: `${message.content}`,
+          temperature:0.9,
+          max_tokens:100,
+      });
+      console.log(`${response.data.choices[0].text}`);
+      if (response.data.choices[0].text.trim() !== '') {
+              message.reply(`${response.data.choices[0].text}`);
+      }
+      return;
+  }catch(e){
+      console.log(e)
+  }
+}});
+
+
+
 //nodejs-events
 process.on("unhandledRejection", e => { 
    console.log(e)
@@ -56,4 +88,4 @@ process.on("uncaughtExceptionMonitor", e => {
  })
 //
 
-client.login(token)
+client.login(process.env.TOKEN);
