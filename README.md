@@ -20,8 +20,8 @@ Place your OPENAI token - https://beta.openai.com/overview
 
 ➡️ **There are two ways to receive responses from the bot:**
 
-**1 -** Using the command in slash **/chat**
-**2 -** Creating a channel written "chatbot", this does not need to use command to receive responses from the bot. **Use /chatcreate to create a channel written "chatbot" instantly**
+**1️⃣ -** Using the command in slash **/chat**\n
+**2️⃣ -** Creating a channel written "chatbot", this does not need to use command to receive responses from the bot. **Use /chatcreate to create a channel written "chatbot" instantly**
 
 ##  🔗 **Give it a try using my bot:** https://discord.com/oauth2/authorize?client_id=1056762541084254278&scope=bot&permissions=29427282233616
 
@@ -33,4 +33,4 @@ Place your OPENAI token - https://beta.openai.com/overview
 
 2️⃣ Using the bot on a channel written "chatbot":
 
-![alt text](https://media.discordapp.net/attachments/1067228298322653189/1067231318036971580/chatbot2.gif?width=718&height=468)
+![alt text](https://media.discordapp.net/attachments/1067228298322653189/1067231318036971580/chatbot2.gif)
