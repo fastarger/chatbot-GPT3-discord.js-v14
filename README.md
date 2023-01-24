@@ -20,7 +20,7 @@ Place your OPENAI token - https://beta.openai.com/overview
 
 ➡️ **There are two ways to receive responses from the bot:**
 
-**1️⃣ -** Using the command in slash **/chat**\n
+**1️⃣ -** Using the command in slash **/chat**<br> 
 **2️⃣ -** Creating a channel written "chatbot", this does not need to use command to receive responses from the bot. **Use /chatcreate to create a channel written "chatbot" instantly**
 
 ##  🔗 **Give it a try using my bot:** https://discord.com/oauth2/authorize?client_id=1056762541084254278&scope=bot&permissions=29427282233616
