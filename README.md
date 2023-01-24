@@ -1,6 +1,6 @@
 # Chat Bot based in CHAT GPT3 - Discord.js V14
 
-![alt text](https://media.discordapp.net/attachments/1067228298322653189/1067231590461223013/CHAT_GPT3_-_DISCORD_BOT.png?width=1025&height=359)
+![alt text](https://i.imgur.com/83ziPIn.png)
 
 🤖 A Simple bot in node.js using an OPENAI API.
 
@@ -33,4 +33,4 @@ Place your OPENAI token - https://beta.openai.com/overview
 
 2️⃣ Using the bot on a channel written "chatbot":
 
-![chatbot](https://media.discordapp.net/attachments/1067228298322653189/1067231318036971580/chatbot2.gif?width=718&height=468)
+![chatbot](https://i.imgur.com/GHRUf2h.gif)
