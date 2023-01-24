@@ -27,10 +27,10 @@ Place your OPENAI token - https://beta.openai.com/overview
 
 **See the bot with the OPENAI API working:**
 
-1️⃣ Using /chat command:
+## 1️⃣ Using /chat command:
 
 ![alt text](https://media.discordapp.net/attachments/876308691341697076/1057841862204997712/chat-openai-overview4.gif)
 
-2️⃣ Using the bot on a channel written "chatbot":
+## 2️⃣ Using the bot on a channel written "chatbot":
 
 ![chatbot](https://i.imgur.com/GHRUf2h.gif)
