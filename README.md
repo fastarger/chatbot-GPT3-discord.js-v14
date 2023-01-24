@@ -33,4 +33,4 @@ Place your OPENAI token - https://beta.openai.com/overview
 
 2️⃣ Using the bot on a channel written "chatbot":
 
-![alt text](https://media.discordapp.net/attachments/1067228298322653189/1067231318036971580/chatbot2.gif)
+![chatbot](https://media.discordapp.net/attachments/1067228298322653189/1067231318036971580/chatbot2.gif?width=718&height=468)
