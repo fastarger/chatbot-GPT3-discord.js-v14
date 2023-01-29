@@ -60,9 +60,9 @@ client.on('messageCreate' , async function(message){
       message.channel.sendTyping();
       const response = await openai.createCompletion({
           model:"text-davinci-003",
-          prompt: `${message.content}`,
+          prompt: `Hello, I'm chatbot based on Openai GPT-3 API\n${message.content}`,
           temperature:0.9,
-          max_tokens:100,
+          max_tokens:400,
       });
       console.log(`${response.data.choices[0].text}`);
       if (response.data.choices[0].text.trim() !== '') {
