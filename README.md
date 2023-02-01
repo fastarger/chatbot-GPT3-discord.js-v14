@@ -34,3 +34,7 @@ Place your OPENAI token - https://beta.openai.com/overview
 ## 2️⃣ Using the bot on a channel written "chatbot":
 
 ![chatbot](https://i.imgur.com/GHRUf2h.gif)
+
+## **⚠️ Generate images with Dall-E 2:** 
+
+![alt text](https://media.discordapp.net/attachments/1067224700431908934/1070156389000937602/image.png?width=653&height=468)
