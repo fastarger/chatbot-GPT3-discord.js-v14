@@ -56,7 +56,7 @@ const openai = new OpenAIApi(configuration);
 client.on('messageCreate' , async function(message){
   if (message.channel.name == "chatbot")  {
   try{
-      if(message.author.bot) return; //donot let bot call itself
+      if(message.author.bot) return;
       message.channel.sendTyping();
       const response = await openai.createCompletion({
           model:"text-davinci-003",
