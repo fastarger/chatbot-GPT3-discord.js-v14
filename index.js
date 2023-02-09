@@ -54,7 +54,7 @@ const openai = new OpenAIApi(configuration);
 
 //check for messeges
 client.on('messageCreate' , async function(message){
-  if (message.channel.name == "chatbot")  {
+ if (message.channel.name == ("chatbot"))  {
   try{
       if(message.author.bot) return;
       message.channel.sendTyping();
